@@ -85,7 +85,7 @@ const AboutSection = ({ data }) => {
 };
 
 export async function getStaticProps() {
-  const { data } = useQuery("information", getInformation);
+  const { data } = getInformation();
 
   return {
     props: {
