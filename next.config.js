@@ -4,6 +4,7 @@ const runtimeCaching = require("next-pwa/cache");
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
+    output: 'export',
     assetPrefix: isProd ? '/PersonalSite/' : '',
     reactStrictMode: true,
     images: {
