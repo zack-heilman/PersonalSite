@@ -11,8 +11,8 @@
         "build": "next build",
         "lint": "next lint",
         "export": "next build && next export",
-        "predeploy" : "npm run build",
-        "deploy" : "gh-pages -d build"
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "dependencies": {
         "@emailjs/browser": "^3.6.2",
