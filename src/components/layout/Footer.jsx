@@ -3,9 +3,7 @@ import { useQuery } from "react-query";
 import { getInformation } from "../../fetchers";
 import { SocialIcons } from "../elements";
 
-const Footer = () => {
-  const { data } = useQuery("information", getInformation);
-
+const Footer = ({ data }) => {
   if (!data) return null;
 
   return (
@@ -20,5 +18,16 @@ const Footer = () => {
     </footer>
   );
 };
+
+
+export async function getStaticProps() {
+  const { data } = useQuery("information", getInformation);
+
+  return {
+    props: {
+      data
+    }
+  }
+}
 
 export default Footer;

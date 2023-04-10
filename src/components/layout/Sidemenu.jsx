@@ -5,9 +5,7 @@ import { useQuery } from "react-query";
 import { getInformation } from "../../fetchers";
 import { imageLoader } from "../../lib/utils";
 
-const Sidemenu = ({ fullMenu, fullMenuHandler }) => {
-  const { data } = useQuery("information", getInformation);
-
+const Sidemenu = ({ fullMenu, fullMenuHandler, data }) => {
   if (!data) return null;
 
   return (
@@ -51,5 +49,15 @@ const Sidemenu = ({ fullMenu, fullMenuHandler }) => {
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const { data } = useQuery("information", getInformation);
+
+  return {
+    props: {
+      data
+    }
+  }
+}
 
 export default Sidemenu;

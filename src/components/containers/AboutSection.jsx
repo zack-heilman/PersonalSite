@@ -5,9 +5,7 @@ import { childrenAnimation } from "../../lib/motion";
 import { getInformation } from "../../fetchers";
 import { useQuery } from "react-query";
 
-const AboutSection = () => {
-  const { data } = useQuery("information", getInformation);
-
+const AboutSection = ({ data }) => {
   if (!data) return null;
 
   return (
@@ -85,5 +83,15 @@ const AboutSection = () => {
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const { data } = useQuery("information", getInformation);
+
+  return {
+    props: {
+      data
+    }
+  }
+}
 
 export default AboutSection;

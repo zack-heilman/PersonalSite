@@ -6,9 +6,7 @@ import { getInformation } from "../../fetchers";
 import { childrenAnimation } from "../../lib/motion";
 import ContactForm from "./ContactForm";
 
-const ContactSection = () => {
-  const { data } = useQuery("information", getInformation);
-
+const ContactSection = ({ data }) => {
   if (!data) return null;
 
   return (
@@ -74,5 +72,16 @@ const ContactSection = () => {
     </div>
   );
 };
+
+
+export async function getStaticProps() {
+  const { data } = useQuery("information", getInformation);
+
+  return {
+    props: {
+      data
+    }
+  }
+}
 
 export default ContactSection;
