@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Software Engineer",
+        "meta": "UJET",
+        "text": [
+            "Developed integration with WhatsApp messaging using AngularJS, RXjs and Redux.",
+            "Created and maintained new features across site using AngularJS, Firebase/Firestore and Ruby on Rails.",
+            "Developed and published application within ServiceNow to allow customers to seamlessly use our application within the CRM."
+        ],
+        "year": "Nov 2021 - Present"
+    },
+    {
+        "id": 2,
+        "title": "Product Software Developer",
+        "meta": "Wolters Kluwer",
+        "text": [
+            "Developed functionality to facilitate integration of JasperReports to internal reporting system using Perl, JavaScript and Java",
+            "Led team to upgrade ACA electronic fulfillment module by developing and updating the internal system",
+            "Upgraded and maintained DC compliance module using Perl, C and JavaScript",
+            "Worked on UI improvements across our application using JavaScript and Dojo"
+        ],
+        "year": "Apr 2017 - Nov 2021"
+    },
+    {
+        "id": 3,
+        "title": "Programmer Analyst Intern",
+        "meta": "Infosoft Group",
+        "text": [
+            "Developed 121 web scraping scripts that added over 30,000 job postings to our site using VB.Net",
+            "Improved development time by developing scraping templates for third party job boards"
+        ],
+        "year": "May 2016 - Aug 2016"
+    }
+]

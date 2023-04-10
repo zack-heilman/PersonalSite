@@ -1,0 +1,21 @@
+{
+    "firstName": "Zack",
+    "lastName": "Heilman",
+    "fullName": "Zack Heilman",
+    "occupation": "Software Engineer",
+    "location": "Bellingham, Washington, USA",
+    "thumbImage": "/images/formal-image.png",
+    "largeImage": "/images/about-image.png",
+    "bio": "I'm a experienced software engineer with a background of building scalable systems and developing full stack solutions.",
+    "nationality": "American",
+    "socialAddress": {
+        "github": "https://github.com/zack-heilman",
+        "linkedin": "https://www.linkedin.com/in/zackaryrheilman/"
+    },
+    "phoneNumbers": [
+        "+1 (414) 531-9951"
+    ],
+    "emailAddress": [
+        "zrobertheilman@gmail.com"
+    ]
+}
