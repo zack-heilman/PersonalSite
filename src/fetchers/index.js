@@ -1,8 +1,8 @@
-import { http } from "./http";
+const informationData = require("../../public/json/information.json")
+const jobData = require("../../public/json/jobexperience.json");
 
 const getInformation = async () => {
-  let res = await http.get(`/information.json`);
-  return res.data;
+  return informationData;
 };
 
 const getServices = async () => {
@@ -31,8 +31,7 @@ const getPortfolios = async () => {
 };
 
 const getJobExperience = async () => {
-  let res = await http.get(`/jobexperience.json`);
-  return res.data;
+  return jobData;
 };
 
 const getEducationBackground = async () => {

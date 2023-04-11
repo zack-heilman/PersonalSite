@@ -9,7 +9,9 @@ import { useQuery } from "react-query";
 import { getInformation } from "../../fetchers";
 import ReactTyped from "react-typed";
 
-const HeroSection = ({ blurred, scroll = true, typed = true, data }) => {
+const HeroSection = ({ blurred, scroll = true, typed = true }) => {
+  const { data } = useQuery("information", getInformation);
+
   if (!data) return null;
 
   return (
@@ -126,16 +128,5 @@ const HeroSection = ({ blurred, scroll = true, typed = true, data }) => {
     </div>
   );
 };
-
-
-export async function getStaticProps() {
-  const { data } = getInformation();
-
-  return {
-    props: {
-      data
-    }
-  }
-}
 
 export default HeroSection;
