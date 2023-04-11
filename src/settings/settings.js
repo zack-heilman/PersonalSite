@@ -1,5 +1,5 @@
 export const settings = {
-    emailjs_serviceid: "service_h8w56z8",
-    emailjs_templateid: "template_17oz5ep",
+    emailjs_serviceid: "service_ns85o85",
+    emailjs_templateid: "template_0f52a4e",
     emailjs_publickey: "H9VCIVQ5uXYwV4exl",
 };
