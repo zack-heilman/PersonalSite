@@ -32,7 +32,7 @@ const ContactForm = () => {
         },
         (error) => {
           setServerSuccess(false);
-          setServerError("Something is wrong while sending the message!");
+          setServerError("Something went wrong while sending the message!");
         }
       );
   };

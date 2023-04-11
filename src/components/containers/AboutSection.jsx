@@ -9,8 +9,6 @@ import { useQuery } from "react-query";
 const AboutSection = () => {
   const { data } = useQuery("information", getInformation);
 
-  console.log(getConfig())
-
   if (!data) return null;
 
   return (
@@ -33,8 +31,8 @@ const AboutSection = () => {
               loader={imageLoader}
               unoptimized={true}
               src={data.largeImage}
-              height={422}
-              width={422}
+              height={222}
+              width={222}
               layout="responsive"
               alt={data.fullName}
               placeholder="blur"

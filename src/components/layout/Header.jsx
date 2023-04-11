@@ -34,7 +34,7 @@ const Header = () => {
             activeClass="!text-primary"
             to="section-home"
             spy={true}
-            smooth="easeInQuad"
+            smooth="true"
             offset={-74}
             duration={1000}
             className="group relative inline-block cursor-pointer py-6 text-sm font-medium uppercase tracking-wider text-heading before:text-primary"
