@@ -1,4 +1,5 @@
 import Image from "next/image";
+import getConfig from 'next/config'
 import { imageLoader, shimmer, toBase64 } from "../../lib/utils";
 import { motion } from "framer-motion";
 import { childrenAnimation } from "../../lib/motion";
@@ -7,6 +8,8 @@ import { useQuery } from "react-query";
 
 const AboutSection = () => {
   const { data } = useQuery("information", getInformation);
+
+  console.log(getConfig())
 
   if (!data) return null;
 
