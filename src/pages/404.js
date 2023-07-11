@@ -9,7 +9,7 @@ const NotFound = () => {
   return (
     <Layout>
       <Head>
-        <title>Not Found - Zack - React Personal Portfolio Template</title>
+        <title>Not Found - Zack Heilman</title>
       </Head>
 
       {/* Start NotFound Section */}

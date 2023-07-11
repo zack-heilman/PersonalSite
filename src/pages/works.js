@@ -7,7 +7,7 @@ const projects = () => {
   return (
     <Layout2>
       <Head>
-        <title>Portfolios - Zack - React Personal Portfolio Template</title>
+        <title>Portfolios - Zack Heilman</title>
       </Head>
 
       {/* Start Portfolios Section */}

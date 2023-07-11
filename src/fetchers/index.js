@@ -1,5 +1,6 @@
 const informationData = require("../../public/json/information.json")
 const jobData = require("../../public/json/jobexperience.json");
+const portfolios = require("../../public/json/portfolios.json");
 
 const getInformation = async () => {
   return informationData;
@@ -26,8 +27,7 @@ const getPortfolioFilters = async () => {
 };
 
 const getPortfolios = async () => {
-  let res = await http.get(`/portfolios.json`);
-  return res.data;
+  return portfolios;
 };
 
 const getJobExperience = async () => {
