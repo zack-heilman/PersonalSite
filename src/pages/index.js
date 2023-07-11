@@ -16,7 +16,7 @@ const index = ({ posts }) => {
   return (
     <Layout>
       <Head>
-        <title>Zack Heilman</title>
+        <title>Zack - React Personal Portfolio Template</title>
       </Head>
 
       {/* Start Hero Section */}
@@ -49,7 +49,7 @@ const index = ({ posts }) => {
       </Section>
       {/* End Resume Section */}
 
-      {/* Start Portfolios Section */}
+      {/* Start Portfolios Section }
         <Section
           name="section-portfolios"
           className="portfolios-section pt-24 lg:pt-28 xl:pt-32"
@@ -59,7 +59,7 @@ const index = ({ posts }) => {
             <PortfoliosSection />
           </div>
         </Section>
-      {/* End Portfolios Section */}
+      { End Portfolios Section */}
 
       {/* Start Contact Section */}
       <Section
