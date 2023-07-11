@@ -16,7 +16,7 @@ const index = ({ posts }) => {
   return (
     <Layout>
       <Head>
-        <title>Zack - React Personal Portfolio Template</title>
+        <title>Zack Heilman</title>
       </Head>
 
       {/* Start Hero Section */}
