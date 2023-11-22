@@ -6,6 +6,7 @@ import MobileNavigation from "./MobileNavigation";
 import Navigation from "./Navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Logo } from "../utils";
+import { headerNavAnimation } from "../../lib/motion";
 
 const Header = () => {
   const [sticky, setSticky] = useState(false);
@@ -28,25 +29,41 @@ const Header = () => {
     >
       <div className="container mx-auto">
         <div className="header-inner flex items-center justify-between">
-          
-          <ScrollLink
-            activeClass="!text-primary"
-            to="section-home"
-            spy={true}
-            smooth="true"
-            offset={-74}
-            duration={1000}
-            className="group relative inline-block cursor-pointer py-6 text-sm font-medium uppercase tracking-wider text-heading before:text-primary"
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+            variants={headerNavAnimation}
           >
-            <Logo/>
-          </ScrollLink>
-          <div className="header-mobilenav block lg:hidden">
-            <button
-              className="btn btn-small btn-transparent px-3 text-3xl"
-              onClick={() => setMobileMenu(true)}
+            <ScrollLink
+              activeClass="!text-primary"
+              to="section-home"
+              spy={true}
+              smooth="true"
+              offset={-74}
+              duration={1000}
+              className="group relative inline-block cursor-pointer py-6 text-sm font-medium uppercase tracking-wider text-heading before:text-primary"
             >
-              <RiMenuLine />
-            </button>
+              <Logo/>
+            </ScrollLink>
+          </motion.div>
+          <div className="header-mobilenav block lg:hidden">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+              variants={headerNavAnimation}
+            >
+              <button
+                className="btn btn-small btn-transparent px-3 text-3xl"
+                onClick={() => setMobileMenu(true)}
+              >
+                <RiMenuLine />
+              </button>
+              
+            </motion.div>
             <AnimatePresence>
               {mobileMenu && (
                 <motion.div

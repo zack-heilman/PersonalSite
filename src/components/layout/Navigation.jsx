@@ -21,7 +21,7 @@ const sections = [
 const Navigation = () => {
 
   return (
-    <nav className="flex-grow px-5 text-center">
+    <nav className="flex-grow px-5 text-center inline-flex gap-4">
       <ul className="mb-0 inline-flex list-none gap-7 pl-0">
         {sections.map((section, index) => (
             <li className="inline-block align-middle" key={index}>
@@ -48,6 +48,17 @@ const Navigation = () => {
             </li>
         ))}
       </ul>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: 0.2 * sections.length}}
+        variants={headerNavAnimation}
+      >
+        <a href="/Zack Heilman Resume.pdf" className="btn mt-3">
+          <span>Resume</span>
+        </a>
+      </motion.div>
     </nav>
   );
 };

@@ -30,7 +30,6 @@ const index = () => {
         className="resume-section pt-24 lg:pt-28 xl:pt-32"
       >
         <div className="container mx-auto">
-          <SectionHeading title="Experience"/>
           <ResumeSection />
         </div>
       </Section>
@@ -54,7 +53,6 @@ const index = () => {
         className="contact-section pt-24 lg:pt-28 xl:pt-32"
       >
         <div className="container mx-auto">
-          <SectionHeading title="Contact Me"/>
           <ContactSection />
         </div>
       </Section>
