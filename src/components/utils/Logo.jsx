@@ -1,10 +1,29 @@
-import Link from "next/link";
+import Image from "next/image";
+import { imageLoader, shimmer, toBase64 } from "../../lib/utils";
+import { useQuery } from "react-query";
+import { getInformation } from "../../fetchers";
 
-const Logo = ({ url = "/", text = true }) => {
+const Logo = () => {
+  const { data } = useQuery("information", getInformation);
+
+  console.log(data);
+
+  if (!data) return null;
+
   return (
-     
-      <div>
-        Z.H.
+      <div className="h-10 w-16">
+        <Image
+          loader={imageLoader}
+          unoptimized={true}
+          src={data.logo}
+          height={150}
+          width={250}
+          layout="responsive"
+          placeholder="blur"
+          blurDataURL={`data:image/svg+xml;base64,${toBase64(
+            shimmer(150, 150)
+          )}`}
+        />
       </div>
         
   );
