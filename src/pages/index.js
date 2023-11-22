@@ -24,18 +24,6 @@ const index = () => {
       </Section>
       {/* End Hero Section */}
 
-      {/* Start About Section */}
-      <Section
-        name="section-about"
-        className="about-section pt-24 lg:pt-28 xl:pt-32"
-      >
-        <div className="container mx-auto">
-          <SectionHeading title="About Me" />
-          <AboutSection />
-        </div>
-      </Section>
-      {/* End About Section */}
-
       {/* Start Resume Section */}
       <Section
         name="section-resume"

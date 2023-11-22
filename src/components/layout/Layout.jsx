@@ -9,7 +9,11 @@ import useEventListener from "../../hooks/useEventListener";
 
 const Layout = ({ children, blurred }) => {
   const [backToTop, setBackToTop] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  setTimeout(() => {
+    setLoading(false);
+  }, 2000);
 
   const scroll = Scroll.animateScroll;
 
@@ -32,7 +36,7 @@ const Layout = ({ children, blurred }) => {
         >
           <Header />
           <main
-            className={`page-content relative bg-grey bg-opacity-95 ${
+            className={`page-content relative bg-grey-darken bg-opacity-95 ${
               blurred ? "backdrop-blur-lg backdrop-filter" : ""
             }`}
           >

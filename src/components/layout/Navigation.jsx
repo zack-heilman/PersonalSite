@@ -7,11 +7,7 @@ const sections = [
   {
     location: 'section-home',
     name:'Home'
-  }, 
-  {
-    location: 'section-about',
-    name:'About'
-  }, 
+  },
   {
     location: 'section-resume',
     name:'Experience'

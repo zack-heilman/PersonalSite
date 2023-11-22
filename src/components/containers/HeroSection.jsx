@@ -100,29 +100,7 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
               </motion.div>
             </div>
           </div>
-          {scroll ? (
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: 1 }}
-              variants={childrenAnimation}
-              className="herosection-bottom absolute left-0 top-auto bottom-10 w-full justify-between text-center"
-            >
-              <Link
-                activeClass="active"
-                to="section-about"
-                spy={true}
-                smooth="easeInQuad"
-                offset={-74}
-                duration={1000}
-                className="cursor-pointer text-xs font-medium uppercase tracking-widest transition-all hover:text-primary"
-              >
-                <RiArrowDownLine className="inline animate-bounce text-base" />
-                <span className="pl-2">Scroll Down</span>
-              </Link>
-            </motion.div>
-          ) : null}
+         
         </div>
       </div>
     </div>
