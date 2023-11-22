@@ -36,18 +36,6 @@ const Sidemenu = ({ fullMenu, fullMenuHandler }) => {
           {fullMenu ? <RiCloseLine /> : <RiMenuLine />}
         </button>
       </div>
-      <div className="flex h-[40%] w-full items-end justify-center self-end">
-        <div className="copyrightvertical rotate-180 text-left">
-          <span className="whitespace-nowrap">
-            &copy; {new Date().getFullYear()}{" "}
-          </span>
-          <Link href="/">
-            <a className="block font-medium text-heading no-underline hover:text-primary lg:inline">
-              NuclearThemes
-            </a>
-          </Link>
-        </div>
-      </div>
     </div>
   );
 };

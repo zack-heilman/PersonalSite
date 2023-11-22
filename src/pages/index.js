@@ -15,7 +15,7 @@ const index = () => {
   return (
     <Layout>
       <Head>
-        <title>Zack Heilman</title>
+        <title>Zacks Heilman</title>
       </Head>
 
       {/* Start Hero Section */}

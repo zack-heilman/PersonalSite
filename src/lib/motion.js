@@ -18,7 +18,18 @@ export const childrenAnimation = {
         opacity: 1,
     },
     hidden: {
-        y: 20,
+        y: 35,
         opacity: 0,
     },
 };
+
+export const headerNavAnimation = {
+    visible: {
+        y: 0,
+        opacity: 1,
+    },
+    hidden: {
+        y: -35,
+        opacity: 0,
+    },
+}
