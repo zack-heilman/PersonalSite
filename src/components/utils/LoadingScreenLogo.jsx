@@ -19,7 +19,7 @@ const Logo = () => {
           whileInView="visible"
           animate="magic"
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           variants={loadingScreenLogoAnimation}
         >
           <Image
@@ -40,7 +40,7 @@ const Logo = () => {
           whileInView="visible"
           animate="magic"
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           variants={loadingScreenLogoAnimation}
         >
           <Image
