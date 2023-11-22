@@ -33,3 +33,19 @@ export const headerNavAnimation = {
         opacity: 0,
     },
 }
+
+export const loadingScreenLogoAnimation = {
+    visible: {
+        scale: 1,
+        y: 0,
+        opacity: 1,
+    },
+    hidden: {
+        scale: .5,
+        y: -135,
+        opacity: 0,
+    },
+    magic: {
+        scale: 1,
+    }
+}

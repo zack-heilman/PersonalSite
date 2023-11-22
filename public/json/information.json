@@ -7,6 +7,8 @@
     "thumbImage": "/images/formal-image.png",
     "largeImage": "/images/about-image.png",
     "logo": "/images/logo.png",
+    "firstNameImage": "/images/first-name.png",
+    "lastNameImage": "/images/last-name.png",
     "bio": "I'm an experienced software engineer with a background of building scalable systems and developing full stack solutions.",
     "nationality": "American",
     "socialAddress": {

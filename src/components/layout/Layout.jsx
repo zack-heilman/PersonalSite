@@ -13,7 +13,7 @@ const Layout = ({ children, blurred }) => {
 
   setTimeout(() => {
     setLoading(false);
-  }, 2000);
+  }, 3000);
 
   const scroll = Scroll.animateScroll;
 
