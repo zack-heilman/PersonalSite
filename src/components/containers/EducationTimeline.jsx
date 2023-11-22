@@ -7,7 +7,7 @@ import { TimelineItem } from "../elements";
 
 const EducationTimeline = () => {
     const { data } = useQuery("education-background", getEducationBackground);
-
+    console.log(data);
     if (!data) return null;
 
     return (

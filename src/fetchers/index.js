@@ -1,29 +1,10 @@
 const informationData = require("../../public/json/information.json")
 const jobData = require("../../public/json/jobexperience.json");
+const educationData = require("../../public/json/educationbackground.json");
 const portfolios = require("../../public/json/portfolios.json");
 
 const getInformation = async () => {
   return informationData;
-};
-
-const getServices = async () => {
-  let res = await http.get(`/services.json`);
-  return res.data;
-};
-
-const getTechskills = async () => {
-  let res = await http.get(`/techskills.json`);
-  return res.data;
-};
-
-const getLanguageskills = async () => {
-  let res = await http.get(`/languageskills.json`);
-  return res.data;
-};
-
-const getPortfolioFilters = async () => {
-  let res = await http.get(`/portfoliofilters.json`);
-  return res.data;
 };
 
 const getPortfolios = async () => {
@@ -35,23 +16,12 @@ const getJobExperience = async () => {
 };
 
 const getEducationBackground = async () => {
-  let res = await http.get(`/educationbackground.json`);
-  return res.data;
-};
-
-const getClientReviews = async () => {
-  let res = await http.get(`/clientsreview.json`);
-  return res.data;
+  return educationData;
 };
 
 export {
   getInformation,
-  getServices,
-  getTechskills,
-  getLanguageskills,
-  getPortfolioFilters,
   getPortfolios,
   getJobExperience,
   getEducationBackground,
-  getClientReviews,
 };

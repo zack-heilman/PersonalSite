@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { RiMailLine, RiMapPinLine, RiPhoneLine } from "react-icons/ri";
+import { RiMailLine, RiPhoneLine } from "react-icons/ri";
 import { useQuery } from "react-query";
 import { getInformation } from "../../fetchers";
 import { childrenAnimation } from "../../lib/motion";

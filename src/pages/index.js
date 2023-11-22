@@ -10,9 +10,8 @@ import {
 } from "../components/containers";
 import { Layout } from "../components/layout";
 import { SectionHeading } from "../components/utils";
-import { getPostsByPage } from "../lib/blogging";
 
-const index = ({ posts }) => {
+const index = () => {
   return (
     <Layout>
       <Head>
@@ -79,18 +78,3 @@ const index = ({ posts }) => {
 };
 
 export default index;
-
-export async function getStaticProps() {
-  // const queryClient = new QueryClient();
-  const { posts } = getPostsByPage();
-
-  // await queryClient.prefetchQuery('services', getServices)
-
-  return {
-    props: {
-      // dehydratedState: dehydrate(queryClient),
-      posts,
-    },
-    revalidate: 10,
-  };
-}

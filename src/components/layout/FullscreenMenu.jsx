@@ -29,7 +29,7 @@ const FullscreenMenu = ({ fullMenuHandler }) => {
             className="flex w-full items-center justify-center self-stretch p-5 text-5xl xl:text-6xl font-bold uppercase text-heading group-hover:text-primary"
             onClick={(e) => fullMenuHandler(false)}
           >
-            <span className="fullmenuitem rotate-180">Resume</span>
+            <span className="fullmenuitem rotate-180">Experience</span>
           </a>
         </Link>
       </li>
