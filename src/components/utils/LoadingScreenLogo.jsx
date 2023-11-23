@@ -8,8 +8,6 @@ import { loadingScreenLogoAnimation } from "../../lib/motion";
 const Logo = () => {
   const { data } = useQuery("information", getInformation);
 
-  console.log(data);
-
   if (!data) return null;
 
   return (

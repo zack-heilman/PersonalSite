@@ -6,8 +6,6 @@ import { getInformation } from "../../fetchers";
 const Logo = () => {
   const { data } = useQuery("information", getInformation);
 
-  console.log(data);
-
   if (!data) return null;
 
   return (
