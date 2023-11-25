@@ -13,6 +13,7 @@
             }
         ],
         "description": [
+            "Developed filtering capability within CCAS that allows users to optimize their workforce.",
             "Developed integration with WhatsApp messaging using AngularJS, RXjs and Redux.",
             "Worked on agent experience team to improve usability and performance of call and chat adapters using AngularJS and Ruby on Rails.",
             "Developed certified integration with ServiceNow to enable customers to natively use our widget within the platform.",
@@ -47,7 +48,8 @@
         ],
         "description": [
             "Developed 121 web scraping scripts that added over 30,000 job postings to our site using VB.Net",
-            "Improved development time by developing scraping templates for third party job boards"
+            "Improved development time by developing scraping templates for third party job boards",
+            "Collaborated with sales and development to maximize effectiveness of bots and minimize time to display demo portal to clients."
         ],
         "date": "May 2016 - August 2016"
     }
