@@ -13,7 +13,7 @@ const TimelineItem = ({ timeline: { company, positions, description, date } }) =
                 {positions.map((position, i) => {
                     const title = position.date ? <div className="ps-2 opacity-60">{position.date}</div> : <></>
                     return (
-                        <div className="mt-2">
+                        <div key={i} className="mt-2">
                             <div className="text-heading w-full">{position.title}</div>
                             {title}
                         </div>
