@@ -55,7 +55,7 @@ const Navigation = () => {
         transition={{ duration: 0.4, delay: 0.2 * sections.length}}
         variants={headerNavAnimation}
       >
-        <a href="/Zack Heilman Resume.pdf" className="btn mt-3">
+        <a href="/resume.pdf" className="btn mt-3">
           <span>Resume</span>
         </a>
       </motion.div>

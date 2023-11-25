@@ -31,7 +31,7 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.2 }}
+                transition={{ duration: 0.4, delay: 1.2 }}
                 variants={childrenAnimation}
                 className="herosection-imagewrapper relative mb-5 inline-block overflow-hidden rounded-full align-middle"
               >
@@ -56,7 +56,7 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.4 }}
+                transition={{ duration: 0.4, delay: 1.4 }}
                 variants={childrenAnimation}
                 className="mb-5 text-heading"
               >
@@ -82,7 +82,7 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.6 }}
+                transition={{ duration: 0.4, delay: 1.6 }}
                 variants={childrenAnimation}
                 className="lead mb-0"
               >
@@ -92,7 +92,7 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.8 }}
+                transition={{ duration: 0.4, delay: 1.8 }}
                 variants={childrenAnimation}
                 className="herosection-socialicons mt-7 text-center"
               >
