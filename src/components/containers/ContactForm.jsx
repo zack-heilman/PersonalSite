@@ -54,7 +54,7 @@ const ContactForm = () => {
         {errors.name && (
           <>
             {errors.name.type === "required" && (
-              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500">
+              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded">
                 Name is required!
               </div>
             )}
@@ -75,12 +75,12 @@ const ContactForm = () => {
         {errors.email && (
           <>
             {errors.email.type === "required" && (
-              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500">
+              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded">
                 Email is required!
               </div>
             )}
             {errors.email.type === "pattern" && (
-              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500">
+              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded">
                 Invalid email address!
               </div>
             )}
@@ -99,7 +99,7 @@ const ContactForm = () => {
         {errors.message && (
           <>
             {errors.message.type === "required" && (
-              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500">
+              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded">
                 Message is required!
               </div>
             )}
@@ -107,7 +107,7 @@ const ContactForm = () => {
         )}
       </div>
       {!serverSuccess && serverError && (
-        <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500">
+        <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded">
           {serverError}
         </div>
       )}

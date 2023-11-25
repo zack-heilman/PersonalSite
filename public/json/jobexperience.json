@@ -1,37 +1,54 @@
 [
     {
         "id": 1,
-        "title": "Software Engineer",
-        "meta": "UJET",
-        "text": [
+        "company": "UJET",
+        "positions": [
+            {
+                "title":"Senior Software Engineer",
+                "date": "October 2023 - Present"
+            },
+            {
+                "title":"Software Engineer",
+                "date": "November 2021 - October 2023"
+            }
+        ],
+        "description": [
             "Developed integration with WhatsApp messaging using AngularJS, RXjs and Redux.",
             "Worked on agent experience team to improve usability and performance of call and chat adapters using AngularJS and Ruby on Rails.",
             "Developed certified integration with ServiceNow to enable customers to natively use our widget within the platform.",
             "Improved scalability of platform by optimizing integrations with third party CRMs."
         ],
-        "year": "Nov 2021 - Present"
+        "date": "November 2021 - Present"
     },
     {
         "id": 2,
-        "title": "Product Software Developer",
-        "meta": "Wolters Kluwer",
-        "text": [
+        "company": "Wolters Kluwer",
+        "positions": [
+            {
+                "title": "Product Software Developer"
+            }
+        ],
+        "description": [
             "Developed functionality to facilitate integration of JasperReports to internal reporting system using Perl, JavaScript and Java",
             "Led team to upgrade ACA electronic fulfillment module by developing and updating the internal system",
             "Upgraded and maintained DC compliance module using Perl, C and JavaScript",
             "Worked on UI improvements across our application using JavaScript and Dojo",
             "Designed, implemented, and released Distribution Tracking System to the product suite."
         ],
-        "year": "Apr 2017 - Nov 2021"
+        "date": "April 2017 - November 2021"
     },
     {
         "id": 3,
-        "title": "Programmer Analyst Intern",
-        "meta": "Infosoft Group",
-        "text": [
+        "company": "Infosoft Group",
+        "positions": [
+            {
+                "title": "Programmer Analyst Intern"
+            }
+        ],
+        "description": [
             "Developed 121 web scraping scripts that added over 30,000 job postings to our site using VB.Net",
             "Improved development time by developing scraping templates for third party job boards"
         ],
-        "year": "May 2016 - Aug 2016"
+        "date": "May 2016 - August 2016"
     }
 ]

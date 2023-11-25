@@ -1,4 +1,3 @@
-import EducationTimeline from "./EducationTimeline";
 import JobTimeline from "./JobTimeline";
 
 const ResumeSection = () => {
