@@ -9,7 +9,7 @@ import useEventListener from "../../hooks/useEventListener";
 
 const Layout = ({ children, blurred }) => {
   const [backToTop, setBackToTop] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   setTimeout(() => {
     setLoading(false);
