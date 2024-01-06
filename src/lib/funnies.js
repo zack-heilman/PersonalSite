@@ -261,7 +261,8 @@ export default [
   "Baking ice cream...",
   "We apologize for the wait. Those responsible for the wait have been sacked.",
   "We again apologize for the wait. Those responsible for sacking the people who have just been sacked, have been sacked.",
-  "Pondering the meaning of life...",
-  "Searching for the Amulet of Yendor...",
   "Deploying deadly neurotoxins...",
+  "These are not the droids you're looking for...",
+  "Let's take a moment to reflect on what we are doing here...",
+  "Computing the secret to life, the universe, and everything...",
 ];
