@@ -2,7 +2,6 @@ import Image from "next/image";
 import { imageLoader, shimmer, toBase64 } from "../../lib/utils";
 import { useQuery } from "react-query";
 import { getInformation } from "../../fetchers";
-import { motion } from "framer-motion";
 import funnies from "../../lib/funnies";
 
 const Logo = () => {
@@ -26,7 +25,9 @@ const Logo = () => {
               shimmer(150, 150)
             )}`}
           />
-          {randomJoke}
+          <div className="pt-4">
+            {randomJoke}
+          </div>
       </div>
         
   );
