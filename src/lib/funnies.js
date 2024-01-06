@@ -87,7 +87,7 @@ export default [
   "99 bottles of beer on the wall..",
   "Stay awhile and listen..",
   "Be careful not to step in the git-gui",
-  "You edhall not pass! yet..",
+  "You shall not pass! yet..",
   "Load it and they will come",
   "Convincing AI not to turn evil..",
   "There is no spoon. Because we are not done loading it",
