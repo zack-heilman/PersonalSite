@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
           <meta name="theme-color" content="#72E2AE" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <link rel="manifest" href="/manifest.json" />
-          <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon" />
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="apple-touch-icon" href="/icon-192x192.png" />
           <title>Zack Heilman</title>
         </Head>
