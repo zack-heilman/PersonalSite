@@ -259,4 +259,9 @@ export default [
   "Don't panic... AHHHHH!",
   "Ensuring Gnomes are still short.",
   "Baking ice cream...",
+  "We apologize for the wait. Those responsible for the wait have been sacked.",
+  "We again apologize for the wait. Those responsible for sacking the people who have just been sacked, have been sacked.",
+  "Pondering the meaning of life...",
+  "Searching for the Amulet of Yendor...",
+  "Deploying deadly neurotoxins...",
 ];
