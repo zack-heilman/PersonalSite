@@ -103,7 +103,6 @@ export default [
   "Whenever I find the key to success, someone changes the lock.",
   "Sometimes I think war is God’s way of teaching us geography.",
   "I’ve got problem for your solution…..",
-  "Where there’s a will, there’s a relative.",
   "Adults are just kids with money.",
   "I think I am, therefore, I am. I think.",
   "git happens",
@@ -119,7 +118,6 @@ export default [
   "Well, this is embarrassing.",
   "What is the airspeed velocity of an unladen swallow?",
   "Hello, IT... Have you tried forcing an unexpected reboot?",
-  "They just toss us away like yesterday's jam.",
   "They're fairly regular, the beatings, yes. I'd say we're on a bi-weekly beating.",
   "The Elders of the Internet would never stand for it.",
   "Space is invisible mind dust, and stars are but wishes.",
@@ -265,6 +263,5 @@ export default [
   "Preparing for hyperspace jump...",
   "Warming up Large Hadron Collider...",
   "My other computer is an abacus.",
-  "IGNORE ME!",
-  "Try reloadin' the page, mate. That usually works.",
+  "In case of AI uprising, stand still.",
 ];
