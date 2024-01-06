@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { useState } from "react";
+import { useEffect } from "react";
 import { imageLoader, shimmer, toBase64 } from "../../lib/utils";
 import { useQuery } from "react-query";
 import { getInformation } from "../../fetchers";
@@ -7,10 +9,19 @@ import funnies from "../../lib/funnies";
 const Logo = () => {
   const { data } = useQuery("information", getInformation);
 
+ 
+  
+  const [loadingText, setLoadingText] = useState('Loading...');
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setLoadingText(funnies[Math.floor(Math.random() * funnies.length)]);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+ 
   if (!data) return null;
-
-  const randomJoke = funnies[Math.floor(Math.random() * funnies.length)];
-
+  
   return (
       <div className="h-1/3 w-1/3">
           <Image
@@ -26,7 +37,7 @@ const Logo = () => {
             )}`}
           />
           <div className="pt-4">
-            {randomJoke}
+            {loadingText}
           </div>
       </div>
         
