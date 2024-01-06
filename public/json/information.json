@@ -9,6 +9,7 @@
     "logo": "/images/logo.png",
     "firstNameImage": "/images/first-name.png",
     "lastNameImage": "/images/last-name.png",
+    "loadingDeskGif": "/images/LoadingDesk.gif",
     "bio": "I'm an experienced software engineer with a background of building scalable systems and developing full stack solutions.",
     "nationality": "American",
     "socialAddress": {

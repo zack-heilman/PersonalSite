@@ -9,11 +9,11 @@ import useEventListener from "../../hooks/useEventListener";
 
 const Layout = ({ children, blurred }) => {
   const [backToTop, setBackToTop] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   setTimeout(() => {
     setLoading(false);
-  }, 3000);
+  }, 8000);
 
   const scroll = Scroll.animateScroll;
 
