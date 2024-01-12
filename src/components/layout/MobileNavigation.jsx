@@ -83,7 +83,7 @@ const MobileNavigation = ({ changeState }) => {
             </ScrollLink>
           </li>
         </ul>
-        <a href="/Zack Heilman Resume.pdf" className="btn">
+        <a href="/resume.pdf" className="btn">
           <span>Resume</span>
         </a>
       </nav>
