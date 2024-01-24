@@ -35,17 +35,16 @@ const index = () => {
       </Section>
       {/* End Resume Section */}
 
-      {/* Start Portfolios Section }
+      {/* Start Portfolios Section */}
         <Section
           name="section-portfolios"
           className="portfolios-section pt-24 lg:pt-28 xl:pt-32"
         >
           <div className="container mx-auto">
-            <SectionHeading title="My Projects"/>
             <PortfoliosSection />
           </div>
         </Section>
-      { End Portfolios Section */}
+      {/* End Portfolios Section */}
 
       {/* Start Contact Section */}
       <Section

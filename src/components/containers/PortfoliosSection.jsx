@@ -11,8 +11,6 @@ const PortfoliosSection = () => {
 
   const { data } = useQuery("portfolios", getPortfolios);
 
-  console.log(data);
-
   useEffect(() => {
     if (data) setVisiblePortfolios(data.slice(0, 6));
   }, [data]);
@@ -34,6 +32,9 @@ const PortfoliosSection = () => {
 
   return (
     <>
+      <h4>
+        Personal Projects
+      </h4>
       <motion.div layout className="mt-12 grid grid-cols-6 gap-7">
         {visiblePortfolios?.map((portfolio) => (
           <motion.div

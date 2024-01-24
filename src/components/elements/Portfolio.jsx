@@ -9,8 +9,8 @@ import { imageLoader, shimmer, toBase64 } from "../../lib/utils";
 const Portfolio = ({
   portfolio: { title, subtitle, coverimage, imagegallery, videogallery, url },
 }) => {
-  const [videoGalleryOpen, setVideoGalleryOpen] = useState(false);
-  const [imageGalleryOpen, setImageGalleryOpen] = useState(false);
+  const [videoGalleryToggler, setvideoGalleryToggler] = useState(false);
+  const [imageGalleryToggler, setimageGalleryToggler] = useState(false);
 
   return (
     <div className="portfolio card hovercard group p-4 md:p-5">
@@ -34,7 +34,7 @@ const Portfolio = ({
           {imagegallery.length ? (
             <button
               className="inline-flex h-10 min-h-0 w-10 items-center justify-center rounded-full bg-primary p-0 text-center text-lg text-grey"
-              onClick={() => setImageGalleryOpen(true)}
+              onClick={() => setimageGalleryToggler(!imageGalleryToggler)}
             >
               <RiImageLine />
             </button>
@@ -42,7 +42,7 @@ const Portfolio = ({
           {videogallery.length ? (
             <button
               className="inline-flex h-10 min-h-0 w-10 items-center justify-center rounded-full bg-primary p-0 text-center text-lg text-grey"
-              onClick={() => setVideoGalleryOpen(true)}
+              onClick={() => setvideoGalleryToggler(!videoGalleryToggler)}
             >
               <RiVideoLine />
             </button>
@@ -65,12 +65,12 @@ const Portfolio = ({
       </div>
       {imagegallery && (
         <Portal>
-          <FsLightbox toggler={imageGalleryOpen} sources={imagegallery} />
+          <FsLightbox toggler={imageGalleryToggler} sources={imagegallery} />
         </Portal>
       )}
       {videogallery && (
         <Portal>
-          <FsLightbox toggler={videoGalleryOpen} sources={videogallery} />
+          <FsLightbox toggler={videoGalleryToggler} sources={videogallery} />
         </Portal>
       )}
     </div>
