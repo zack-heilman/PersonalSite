@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Flo Calcs",
-        "subtitle": "Dynamic calculations and report generation",
+        "subtitle": "A web application for organizing and calculating user defined formulas. Made using MongoDB, Express, React, and Node.",
         "coverimage": "/images/portfolio/flocalcs/capture1.jpg",
         "imagegallery": [
             "/images/portfolio/flocalcs/capture2.jpg",
