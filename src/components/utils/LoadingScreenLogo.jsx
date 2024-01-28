@@ -14,9 +14,9 @@ const Logo = () => {
   const [loadingText, setLoadingText] = useState('Loading...');
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    const timer = setTimeout(() => {
       setLoadingText(funnies[Math.floor(Math.random() * funnies.length)]);
-    }, 3000);
+    }, 2250);
     return () => clearInterval(timer);
   }, []);
  
