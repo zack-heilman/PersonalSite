@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useCallback, useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { getPortfolios } from "../../fetchers";
+
+import { childrenAnimation } from "../../lib/motion";
 import { Portfolio } from "../elements";
 
 const PortfoliosSection = () => {
@@ -31,7 +33,14 @@ const PortfoliosSection = () => {
   if (!data) return null;
 
   return (
-    <>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: 0.2 }}
+      variants={childrenAnimation}
+      className="col-span-9 lg:col-span-4"
+    >
       <h4>
         Personal Projects
       </h4>
@@ -59,7 +68,7 @@ const PortfoliosSection = () => {
           </button>
         </div>
       ) : null}
-    </>
+    </motion.div>
   );
 };
 
