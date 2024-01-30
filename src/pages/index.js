@@ -35,7 +35,7 @@ const index = () => {
       </Section>
       {/* End Resume Section */}
 
-      {/* Start Portfolios Section */}
+      {/* Start Portfolios Section }
         <Section
           name="section-portfolios"
           className="portfolios-section pt-24 lg:pt-28 xl:pt-32"
