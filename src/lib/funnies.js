@@ -91,4 +91,5 @@ export default [
   "Preparing for hyperspace jump...",
   "My other computer is an abacus.",
   "In case of AI uprising, stand still.",
+  "A moose once bit my sister.",
 ];
