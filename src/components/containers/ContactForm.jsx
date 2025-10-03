@@ -1,47 +1,22 @@
-import { useRef, useState } from "react";
-import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
-import { settings } from "../../settings/settings";
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactForm = () => {
-  const currentForm = useRef();
+  const [state, handleSubmit] = useForm("mjkarqpy");
 
-  const [serverSuccess, setServerSuccess] = useState("");
-  const [serverError, setServerError] = useState("");
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = (data) => {
-    emailjs
-      .sendForm(
-        settings.emailjs_serviceid,
-        settings.emailjs_templateid,
-        currentForm.current,
-        settings.emailjs_publickey
-      )
-      .then(
-        (result) => {
-          if (result.status === 200 && result.text) {
-            setServerError(false);
-            setServerSuccess("Email successfully sent!");
-          }
-        },
-        (error) => {
-          setServerSuccess(false);
-          setServerError("Something went wrong while sending the message!");
-        }
-      );
-  };
+  if (state.succeeded) {
+    return (
+      <div className="card -mt-1.5 space-y-4 p-4 md:p-5">
+        <div className="bg-green-500 bg-opacity-5 text-center text-sm text-green-500 rounded">
+          Email successfully sent! Thanks for your message.
+        </div>
+      </div>
+    );
+  }
 
   return (
     <form
-      ref={currentForm}
-      className="card -mt-1.5  space-y-4 p-4 md:p-5"
-      onSubmit={handleSubmit(onSubmit)}
+      className="card -mt-1.5 space-y-4 p-4 md:p-5"
+      onSubmit={handleSubmit}
     >
       <div className="inputbox">
         <label htmlFor="name">Name</label>
@@ -49,44 +24,34 @@ const ContactForm = () => {
           type="text"
           placeholder="Enter your name..."
           id="name"
-          {...register("name", { required: true })}
+          name="name"
+          required
         />
-        {errors.name && (
-          <>
-            {errors.name.type === "required" && (
-              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded">
-                Name is required!
-              </div>
-            )}
-          </>
-        )}
+        <ValidationError 
+          prefix="Name" 
+          field="name"
+          errors={state.errors}
+          className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded"
+        />
       </div>
+      
       <div className="inputbox">
         <label htmlFor="email">Email</label>
         <input
           type="email"
           placeholder="Enter your email..."
           id="email"
-          {...register("email", {
-            required: true,
-            pattern: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-          })}
+          name="email"
+          required
         />
-        {errors.email && (
-          <>
-            {errors.email.type === "required" && (
-              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded">
-                Email is required!
-              </div>
-            )}
-            {errors.email.type === "pattern" && (
-              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded">
-                Invalid email address!
-              </div>
-            )}
-          </>
-        )}
+        <ValidationError 
+          prefix="Email" 
+          field="email"
+          errors={state.errors}
+          className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded"
+        />
       </div>
+      
       <div className="inputbox">
         <label htmlFor="message">Message</label>
         <textarea
@@ -94,30 +59,25 @@ const ContactForm = () => {
           cols="1"
           rows="5"
           id="message"
-          {...register("message", { required: true })}
+          name="message"
+          required
         />
-        {errors.message && (
-          <>
-            {errors.message.type === "required" && (
-              <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded">
-                Message is required!
-              </div>
-            )}
-          </>
-        )}
+        <ValidationError 
+          prefix="Message" 
+          field="message"
+          errors={state.errors}
+          className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded"
+        />
       </div>
-      {!serverSuccess && serverError && (
+
+      {state.errors && state.errors.length > 0 && (
         <div className="bg-red-500 bg-opacity-5 text-center text-sm text-red-500 rounded">
-          {serverError}
+          Something went wrong while sending the message!
         </div>
       )}
-      {!serverError && serverSuccess && (
-        <div className="bg-green-500 bg-opacity-5 text-center text-sm text-green-500">
-          {serverSuccess}
-        </div>
-      )}
-      <button type="submit" className="btn">
-        <span>Send Message</span>
+
+      <button type="submit" disabled={state.submitting} className="btn">
+        <span>{state.submitting ? 'Sending...' : 'Send Message'}</span>
       </button>
     </form>
   );

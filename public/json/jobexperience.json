@@ -1,11 +1,24 @@
 [
     {
+        "id": 0,
+        "company": "Siimpl",
+        "positions": [
+            {
+                "title":"Software Engineer"
+            }
+        ],
+        "description": [
+            "Working on the Disney Roku team"
+        ],
+        "date": "July 2025 - Present"
+    },
+    {
         "id": 1,
         "company": "UJET",
         "positions": [
             {
                 "title":"Senior Software Engineer",
-                "date": "October 2023 - Present"
+                "date": "October 2023 - July 2025"
             },
             {
                 "title":"Software Engineer",
@@ -13,13 +26,16 @@
             }
         ],
         "description": [
-            "Developed filtering capability within CCAS that allows users to optimize their workforce.",
-            "Developed integration with WhatsApp messaging using AngularJS, RXjs and Redux.",
-            "Worked on agent experience team to improve usability and performance of call and chat adapters using AngularJS and Ruby on Rails.",
-            "Developed certified integration with ServiceNow to enable customers to natively use our widget within the platform.",
-            "Improved scalability of platform by optimizing integrations with third party CRMs."
+            "Implemented WhatsApp messaging integration by utilizing AngularJS, RXjs, and Redux frameworks, enhancing clientcommunication",
+            "Improved usability and performance of call and chat adapters using AngularJS and Ruby on Rails",
+            "Developed integration with ServiceNow to enable customers to natively use our widget within the platform",
+            "Improved scalability of platform by optimizing integrations with third party CRMs",
+            "Migrated client application from deprecated Angular.JS over to micro-frontend application using Vue.js and React",
+            "Developed filtering capability within CCAS that allows users to optimize their workforce",
+            "Developed, deployed and maintained integration with HubSpot CRM using Node.js and Ruby on Rails",
+            "Migrated user presence service from monolithic stack over to micro-service, reducing CPU and memory load on current applicationstack by 15%"
         ],
-        "date": "November 2021 - Present"
+        "date": "November 2021 - July 2025"
     },
     {
         "id": 2,
